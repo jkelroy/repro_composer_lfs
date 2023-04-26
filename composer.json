@@ -1,0 +1,35 @@
+{
+    "name": "mvorisek/mvorisek-php-utils-geoip",
+    "description": "Simple wrapper for MaxMind GeoIP reader with bundled GeoIP data",
+    "license": "proprietary",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Michael Voříšek",
+            "email": "mvorisek@mvorisek.cz"
+        }
+    ],
+    "homepage": "https://www.mvorisek.com/",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "maxmind-db/reader": "^1.8",
+        "mvorisek/mvorisek-php-net": "^1.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "johnkary/phpunit-speedtrap": "^3.2",
+        "phpstan/phpstan": "^0.12.58",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "classmap": [
+            "src/GeoIp.php"
+        ],
+        "exclude-from-classmap": [
+            "data/"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

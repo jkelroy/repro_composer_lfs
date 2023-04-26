@@ -1,0 +1,9 @@
+parameters:
+    level: 6
+    paths:
+        - ./
+    excludes_analyse:
+        - vendor/
+
+    # TODO review once we drop PHP 7.x support
+    treatPhpDocTypesAsCertain: false
